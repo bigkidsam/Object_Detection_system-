@@ -4,7 +4,7 @@ import numpy as np
 import time
 from ultralytics import YOLO
 
-DEVELOPER_NAME = "Mayank Singh (Developer)"
+DEVELOPER_NAME = "Swayam Singh (Developer)"
 STUDENT_ID = "CA/DE1/3358"
 INTERNSHIP = "Artificial Intelligence Internship"
 SPONSOR = "Code Alpha"
