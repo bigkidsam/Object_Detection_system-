@@ -36,7 +36,7 @@ class SimpleTracker:
         boxAArea = (boxA[2] - boxA[0]) * (boxA[3] - boxA[1])
         boxBArea = (boxB[2] - boxB[0]) * (boxB[3] - boxB[1])
 
-        return interArea / float(boxAArea + boxBArea - interArea)
+        return interArea / float(boxAArea + boxBArea - interArea)    
 
     def update(self, detections):
         updated_tracks = {}
@@ -173,7 +173,7 @@ def main():
 
         draw_tracks(frame, tracked_objects)
         draw_overlay_info(frame, fps)
-
+        
         cv2.imshow(WINDOW_NAME, frame)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
